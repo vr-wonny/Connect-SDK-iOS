@@ -189,6 +189,12 @@
 		BB9F776F4924E08D116738B1 /* ImageInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = BB9F7AF5170CE02632778263 /* ImageInfo.m */; };
 		BB9F7AD33329FD4AC66C2D12 /* ImageInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = BB9F71B68553DCA74ED1C43E /* ImageInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BB9F7B7905ABBE72E0843AA0 /* MediaInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = BB9F7A0E6A6150ACCA2F89B6 /* MediaInfo.m */; };
+		E865784C2549B69B00D28982 /* MultiScreenWebAppSession.h in Headers */ = {isa = PBXBuildFile; fileRef = E865784A2549B69B00D28982 /* MultiScreenWebAppSession.h */; };
+		E865784D2549B69B00D28982 /* MultiScreenWebAppSession.m in Sources */ = {isa = PBXBuildFile; fileRef = E865784B2549B69B00D28982 /* MultiScreenWebAppSession.m */; };
+		E86578502549B6A800D28982 /* MultiScreenService.m in Sources */ = {isa = PBXBuildFile; fileRef = E865784E2549B6A800D28982 /* MultiScreenService.m */; };
+		E86578512549B6A800D28982 /* MultiScreenService.h in Headers */ = {isa = PBXBuildFile; fileRef = E865784F2549B6A800D28982 /* MultiScreenService.h */; };
+		E86578542549B6BE00D28982 /* MultiScreenDiscoveryProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = E86578522549B6BE00D28982 /* MultiScreenDiscoveryProvider.h */; };
+		E86578552549B6BE00D28982 /* MultiScreenDiscoveryProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = E86578532549B6BE00D28982 /* MultiScreenDiscoveryProvider.m */; };
 		EA5F82F0199BDA2100B7302B /* ConnectSDKDefaultPlatforms.h in Headers */ = {isa = PBXBuildFile; fileRef = EA5F82EF199BD95800B7302B /* ConnectSDKDefaultPlatforms.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EA5F82F4199BDCD300B7302B /* ConnectSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = EA5F82F3199BDCD300B7302B /* ConnectSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EA5FB86E199AEC550057B4B4 /* ConnectableDevice.h in Headers */ = {isa = PBXBuildFile; fileRef = EA5FB7A0199AEC550057B4B4 /* ConnectableDevice.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -571,6 +577,12 @@
 		BB9F735CB760F4387DDA84B4 /* MediaInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaInfo.h; sourceTree = "<group>"; };
 		BB9F7A0E6A6150ACCA2F89B6 /* MediaInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MediaInfo.m; sourceTree = "<group>"; };
 		BB9F7AF5170CE02632778263 /* ImageInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageInfo.m; sourceTree = "<group>"; };
+		E865784A2549B69B00D28982 /* MultiScreenWebAppSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultiScreenWebAppSession.h; sourceTree = "<group>"; };
+		E865784B2549B69B00D28982 /* MultiScreenWebAppSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultiScreenWebAppSession.m; sourceTree = "<group>"; };
+		E865784E2549B6A800D28982 /* MultiScreenService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultiScreenService.m; sourceTree = "<group>"; };
+		E865784F2549B6A800D28982 /* MultiScreenService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultiScreenService.h; sourceTree = "<group>"; };
+		E86578522549B6BE00D28982 /* MultiScreenDiscoveryProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultiScreenDiscoveryProvider.h; sourceTree = "<group>"; };
+		E86578532549B6BE00D28982 /* MultiScreenDiscoveryProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultiScreenDiscoveryProvider.m; sourceTree = "<group>"; };
 		EA41388A18FE51A9002CB005 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		EA5F82EF199BD95800B7302B /* ConnectSDKDefaultPlatforms.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConnectSDKDefaultPlatforms.h; sourceTree = "<group>"; };
 		EA5F82F3199BDCD300B7302B /* ConnectSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConnectSDK.h; sourceTree = "<group>"; };
@@ -1197,6 +1209,15 @@
 			path = Providers;
 			sourceTree = "<group>";
 		};
+		E86578492549B67F00D28982 /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				44E98F5E1B1E63570043BC70 /* OHHTTPStubs.framework */,
+				44E98F5D1B1E63570043BC70 /* OCMock.framework */,
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
 		EA5FB799199AEC2E0057B4B4 /* Connect SDK */ = {
 			isa = PBXGroup;
 			children = (
@@ -1261,6 +1282,8 @@
 		EA5FB7B2199AEC550057B4B4 /* Providers */ = {
 			isa = PBXGroup;
 			children = (
+				E86578522549B6BE00D28982 /* MultiScreenDiscoveryProvider.h */,
+				E86578532549B6BE00D28982 /* MultiScreenDiscoveryProvider.m */,
 				EA5FB7B3199AEC550057B4B4 /* SSDPDiscoveryProvider.h */,
 				442B9A431A153F240053AE51 /* SSDPDiscoveryProvider_Private.h */,
 				EA5FB7B4199AEC550057B4B4 /* SSDPDiscoveryProvider.m */,
@@ -1472,6 +1495,8 @@
 		EA5FB816199AEC550057B4B4 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				E865784F2549B6A800D28982 /* MultiScreenService.h */,
+				E865784E2549B6A800D28982 /* MultiScreenService.m */,
 				EA5FB817199AEC550057B4B4 /* AirPlayService.h */,
 				44A08FFD1B6991CC0077E87D /* AirPlayService_Private.h */,
 				EA5FB818199AEC550057B4B4 /* AirPlayService.m */,
@@ -1582,6 +1607,8 @@
 		EA5FB84D199AEC550057B4B4 /* Sessions */ = {
 			isa = PBXGroup;
 			children = (
+				E865784A2549B69B00D28982 /* MultiScreenWebAppSession.h */,
+				E865784B2549B69B00D28982 /* MultiScreenWebAppSession.m */,
 				EA5FB84E199AEC550057B4B4 /* AirPlayWebAppSession.h */,
 				EA5FB84F199AEC550057B4B4 /* AirPlayWebAppSession.m */,
 				EA5FB850199AEC550057B4B4 /* LaunchSession.h */,
@@ -1629,6 +1656,7 @@
 				EA5FB799199AEC2E0057B4B4 /* Connect SDK */,
 				EA61EB1218FE485B00D75696 /* Frameworks */,
 				EA61EB1118FE485B00D75696 /* Products */,
+				E86578492549B67F00D28982 /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -1758,6 +1786,7 @@
 				4494263E1AF83588006BAFF2 /* DispatchQueueBlockRunner.h in Headers */,
 				EA5FB87C199AEC550057B4B4 /* DiscoveryProvider.h in Headers */,
 				EA5FB8C7199AEC560057B4B4 /* JSONObjectCoding.h in Headers */,
+				E86578542549B6BE00D28982 /* MultiScreenDiscoveryProvider.h in Headers */,
 				44D0ECEF1B55DA9000E02A8B /* SubtitleInfo.h in Headers */,
 				EA5FB8F8199AEC570057B4B4 /* WebOSTVServiceMouse.h in Headers */,
 				EA5FB8A5199AEC560057B4B4 /* GCDWebServerDataRequest.h in Headers */,
@@ -1767,6 +1796,7 @@
 				EA5FB874199AEC550057B4B4 /* DevicePicker.h in Headers */,
 				EA5FB8A1199AEC560057B4B4 /* GCDWebServerRequest.h in Headers */,
 				EA5FB8BF199AEC560057B4B4 /* ConnectError.h in Headers */,
+				E86578512549B6A800D28982 /* MultiScreenService.h in Headers */,
 				EA5FB8BD199AEC560057B4B4 /* ChannelInfo.h in Headers */,
 				EA5FB8ED199AEC570057B4B4 /* DeviceService.h in Headers */,
 				EA5FB89D199AEC560057B4B4 /* GCDWebServerFunctions.h in Headers */,
@@ -1776,6 +1806,7 @@
 				44AD91771AFA7F1000C23A71 /* FireTVService.h in Headers */,
 				EA5FB87B199AEC550057B4B4 /* DiscoveryManagerDelegate.h in Headers */,
 				EA5FB8A7199AEC560057B4B4 /* GCDWebServerFileRequest.h in Headers */,
+				E865784C2549B69B00D28982 /* MultiScreenWebAppSession.h in Headers */,
 				EA5FB8AF199AEC560057B4B4 /* GCDWebServerErrorResponse.h in Headers */,
 				EA5FB8B5199AEC560057B4B4 /* CTGuid.h in Headers */,
 				EA5FB902199AEC570057B4B4 /* LaunchSession.h in Headers */,
@@ -1893,6 +1924,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = EA61EB0718FE485B00D75696;
@@ -2074,6 +2106,7 @@
 				EA5FB8F1199AEC570057B4B4 /* DIALService.m in Sources */,
 				EA5FB887199AEC560057B4B4 /* CTASIDataCompressor.m in Sources */,
 				EA5FB8AC199AEC560057B4B4 /* GCDWebServerURLEncodedFormRequest.m in Sources */,
+				E86578552549B6BE00D28982 /* MultiScreenDiscoveryProvider.m in Sources */,
 				448B28771B041A5600DFF18F /* FireTVMediaControl.m in Sources */,
 				EA5FB8CB199AEC560057B4B4 /* SSDPSocketListener.m in Sources */,
 				EA5FB8DE199AEC560057B4B4 /* ServiceAsyncCommand.m in Sources */,
@@ -2101,6 +2134,7 @@
 				EA5FB89E199AEC560057B4B4 /* GCDWebServerFunctions.m in Sources */,
 				EA5FB905199AEC570057B4B4 /* WebAppSession.m in Sources */,
 				EA5FB912199AEC570057B4B4 /* CastWebAppSession.m in Sources */,
+				E865784D2549B69B00D28982 /* MultiScreenWebAppSession.m in Sources */,
 				EA5FB87A199AEC550057B4B4 /* DiscoveryManager.m in Sources */,
 				EA5FB903199AEC570057B4B4 /* LaunchSession.m in Sources */,
 				EA5FB8A8199AEC560057B4B4 /* GCDWebServerFileRequest.m in Sources */,
@@ -2126,6 +2160,7 @@
 				44316EFF1AF2F04B000FE655 /* FireTVDiscoveryProvider.m in Sources */,
 				EA5FB8F7199AEC570057B4B4 /* AirPlayServiceMirrored.m in Sources */,
 				EA5FB86F199AEC550057B4B4 /* ConnectableDevice.m in Sources */,
+				E86578502549B6A800D28982 /* MultiScreenService.m in Sources */,
 				EA5FB8E7199AEC560057B4B4 /* ServiceConfig.m in Sources */,
 				EA5FB8C2199AEC560057B4B4 /* ConnectUtil.m in Sources */,
 				EA5FB87D199AEC550057B4B4 /* DiscoveryProvider.m in Sources */,
