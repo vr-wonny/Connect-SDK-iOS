@@ -9,3 +9,6 @@
 [submodule "modules/firetv"]
 	path = modules/firetv
 	url = https://github.com/ConnectSDK/Connect-SDK-iOS-FireTV.git
+[submodule "firetv"]
+	path = firetv
+	url = https://github.com/ConnectSDK/Connect-SDK-iOS-FireTV.git

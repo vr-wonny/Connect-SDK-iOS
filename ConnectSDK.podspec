@@ -117,5 +117,7 @@ Pod::Spec.new do |s|
     sp.xcconfig = {
         "FRAMEWORK_SEARCH_PATHS" => "$(PODS_ROOT)/google-cast-sdk/GoogleCastSDK-#{cast_version}-Release",
     }
+    sp.dependency "AmazonFling"
+
   end
 end
